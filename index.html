@@ -1,10 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css"/>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item active-list-item">главная</li>
+          <li class="header__menu-list-item">посмотреть лоты</li>
+          <li class="header__menu-list-item">об аукционе</li>
+        </ul>
+      </nav>
+      <img
+        src="./images/logo-black.svg"
+        class="header__logo"
+        alt="Лого шапки"
+      />
+      <div class="header__contacts">
+        <a class="header__number">+9 999 555 5555</a>
+        <a class="header__email">info@sobaka.ge</a>
+        <p class="header__address">наб. Принсенграхт 263- 265, Амстердам</p>
+      </div>
+    </header>
+    <main>
+      <section class="cover">
+        <h1 class="cover__subtitle">
+          <span class="accent-span">ОНО</span>
+          <span class="accent-span text-center">ТЕБЕ</span>
+          <span class="accent-span text-right">НАДО</span>
+        </h1>
+        <div class="cover_description">
+          <p>Аукцион вещей, вкоторые никто не верил</p>
+          <a>Сделать ставку</a>
+        </div>
+      </section>
+      <section class="lots">
+        <h2 class="lots__subtitle">Лоты</h2>
+        <div class="lots__blocks">
+          <article class="lots__block">
+            <h4 class="lots__block-subtitle">
+              Фильм режиссёра, который бросил киношколу
+            </h4>
+            <p class="lots__block-text">
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+            </p>
+          </article>
+          <article class="lots__block">
+            <h4 class="lots__block-subtitle">
+              Книга, где описан один скучный день из жизни рекламного агента
+            </h4>
+            <p class="lots__block-text">
+              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+              переходами на древнеанглийский. В ней одновременно рассказывается
+              о 16 июня 1904 года и об истории литературы, начиная с античных
+              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+              бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </article>
+          <article class="lots__block">
+            <h4 class="lots__block-subtitle">
+              Картина, которую повторит даже 5-летний сын маминой подруги
+            </h4>
+            <p class="lots__block-text">
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна
+              из революционных работ Кандинского?
+            </p>
+          </article>
+        </div>
+        <a>посмотреть больше</a>
+      </section>
+      <section class="about">
+        <div class="about__columns">
+          <div class="about__logo-column">
+            <div class="about__logo-background">
+              <img
+                src="./images/logo-white.svg"
+                class="abit__logo"
+                alt="Лого Об Аукционе"
+              />
+            </div>
+          </div>
+          <div class="about__text-column">
+            <h3 class="about__subtitle"></h3>
+            <p class="about__text"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__blocks">
+        <ul class="footer__info-list">
+          <li class="footer__info-list-item"></li>
+          <li class="footer__info-list-item"></li>
+          <li class="footer__info-list-item"></li>
+        </ul>
+
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item active-item"></li>
+          <li class="footer__menu-list-item"></li>
+          <li class="footer__menu-list-item"></li>
+        </ul>
+
+        <ul class="footer__links-list">
+          <li class="footer__links-list-item"></li>
+          <li class="footer__links-list-item"></li>
+          <li class="footer__links-list-item"></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
