@@ -10,7 +10,7 @@
   list-style: none;
 }
 
-.header__menu-list {
+.header__links-list {
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -19,25 +19,28 @@
   list-style: circle;
 }
 
-.header__menu-link {
-  border-bottom: 1.5px solid #000;
+.header__link {
+  /*border-bottom: 1.5px solid #000;*/
+  /*По макету выглядит очень как border, а не underline*/
+  text-decoration: underline;
+}
+
+.header__link-active .header__link {
+  /*border-bottom: 0;*/
+  /*Комментарий выше*/
   text-decoration: none;
 }
 
-.active-list-item .header__menu-link {
-  border-bottom: 0;
-}
-
-.no-list-decoration {
+.header__link-list-item_no-bullit {
   list-style: none;
 }
 
-.header__logo{
+.header__logo-image{
   display: block;
   width: 135px;
 }
 
-.address__info {
+.header__address {
   display: flex;
   flex-direction: column;
   justify-self: end;
@@ -49,3 +52,5 @@
   line-height: 24.3px;
   text-underline-position: under;
 }
+
+
