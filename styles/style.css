@@ -53,4 +53,79 @@
   text-underline-position: under;
 }
 
+.cover {
+  position: relative;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title, .cover__description {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 165px 20px 0 50px;
+  font-size: 100px;
+  letter-spacing: 30%;
+  text-transform: uppercase;
+}
+
+.aligned-text_left {
+  align-self: flex-start;
+  text-align: start;
+}
+.aligned-text_center {
+  align-self: center;
+  text-align: center;
+}
+.aligned-text_right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+
+.cover__description {
+  display: flex;
+  justify-content:flex-start;
+  gap: 107px;
+  margin-top: auto;
+  padding: 104px 50px 50px 50px;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  align-items: center; 
+  
+}
+
+.cover__description-text {
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 256px; 
+  height: 51px;
+  /*Не очень понимаю как растянуть кнопку как по макету. 
+  Всегда меньше выходит*/
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;   
+}

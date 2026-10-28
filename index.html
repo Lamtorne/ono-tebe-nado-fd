@@ -26,11 +26,12 @@
           </li>
         </ul>
       </nav>
-      <a class="header__logo"> <img
-        src="./images/logo-black.svg"
-        class="header__logo-image"
-        alt="Лого шапки"
-      />
+      <a class="header__logo">
+        <img
+          src="./images/logo-black.svg"
+          class="header__logo-image"
+          alt="Лого шапки"
+        />
       </a>
       <!-- ссылка a-->
       <address class="address header__address">
@@ -43,15 +44,22 @@
     </header>
     <main>
       <section class="cover">
-        <h1 class="cover__subtitle">
-          <span class="accent-span">ОНО</span>
-          <span class="accent-span text-center">ТЕБЕ</span>
-          <span class="accent-span text-right">НАДО</span>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_left">ОНО</span>
+          <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+          <span class="aligned-text aligned-text_right">НАДО</span>
         </h1>
-        <div class="cover_description">
-          <p>Аукцион вещей, вкоторые никто не верил</p>
-          <a>Сделать ставку</a>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <a class="bet-button">Сделать ставку</a>
           <!--кнопка-->
+          <!--Дополнительные классы для этого блока 
+            letter-spacing-extended
+            no-letter-spacing
+          -->
         </div>
       </section>
       <section class="lots">
