@@ -63,15 +63,26 @@
         </div>
       </section>
       <section class="lots">
-        <h2 class="lots__subtitle">Лоты</h2>
-        <ul class="lots__blocks">
-          <li class="lots__block">
-            <a>
-              <article>
-                <h4 class="lots__block-subtitle">
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <!--TODO:
+
+          добавить overlay к фоновым 
+          изображениям (article)
+          
+          А также указать 
+          card_type_film
+          card_type_book
+          card_type_picture
+          -->
+          <li class="lots__card-list-item  card_type_film">
+            <a class="card-link">
+              <div class="overlay"></div>
+              <article class="card">
+                <h4 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h4>
-                <p class="lots__block-text">
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -79,13 +90,14 @@
               </article>
             </a>
           </li>
-          <li class="lots__block">
-            <a>
-              <article>
-                <h4 class="lots__block-subtitle">
+          <li class="lots__card-list-item card_type_book">
+            <a class="card-link">
+              <div class="overlay"></div>
+              <article class="card">
+                <h4 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h4>
-                <p class="lots__block-text">
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -96,13 +108,14 @@
               </article>
             </a>
           </li>
-          <li class="lots__block">
-            <a>
-              <article>
-                <h4 class="lots__block-subtitle">
+          <li class="lots__card-list-item card_type_picture">
+            <a class="card-link">
+              <div class="overlay"></div>
+              <article class="card">
+                <h4 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h4>
-                <p class="lots__block-text">
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -112,7 +125,7 @@
             </a>
           </li>
         </ul>
-        <a>посмотреть больше</a>
+        <a href="#0" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__columns">
