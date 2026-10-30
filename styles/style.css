@@ -2,7 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center; 
+  align-items: center;
   height: 290px;
 }
 
@@ -108,7 +108,7 @@
   padding: 104px 50px 50px 50px;
   font-weight: 400;
   font-size: 22px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .cover__description-text {
@@ -120,14 +120,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 256px; 
+  width: 256px;
   height: 51px;
   /*Не очень понимаю как растянуть кнопку как по макету. 
   Всегда меньше выходит*/
   border: 1px solid #fff;
   color: #fff;
   text-align: center;
-  white-space: nowrap;   
+  white-space: nowrap;
 }
 
 .lots {
@@ -221,7 +221,7 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   align-items: start;
-  column-gap: 25px;         
+  column-gap: 25px;
   padding: 120px 24px 0 24px;
 }
 
@@ -241,7 +241,7 @@
   width: 150px;
 }
 
-.about__column-text { 
+.about__column-text {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -259,7 +259,7 @@
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 24px;          
+  gap: 24px;
 }
 
 .about__text p {
@@ -281,7 +281,7 @@
 .footer__menu-list {
   font-weight: 400;
   font-size: 18px;
-  text-align: center; 
+  text-align: center;
   list-style: none;
 }
 
