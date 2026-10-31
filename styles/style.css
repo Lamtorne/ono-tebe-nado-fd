@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 290px;
+  min-height: 285px;
 }
 
 .header__menu {
@@ -26,7 +26,7 @@
   text-decoration: underline;
 }
 
-.header__link-active .header__link {
+.header__link-active  {
   /*border-bottom: 0;*/
   /*Комментарий выше*/
   text-decoration: none;
@@ -81,6 +81,10 @@
   padding: 165px 20px 0 50px;
   font-size: 100px;
   letter-spacing: 30%;
+  text-transform: uppercase;
+}
+
+.aligned-text {
   text-transform: uppercase;
 }
 
@@ -145,7 +149,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: repeat(1fr, 3);
   gap: 25px;
   list-style: none;
 }
@@ -170,25 +173,22 @@
   height: 100%;
 }
 
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+.card__background {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -196,7 +196,6 @@
   color: #fff;
   font-weight: 700;
   font-size: 22px;
-  font-style: bold;
   line-height: 120%;
   text-decoration: underline;
   text-transform: uppercase;
@@ -212,9 +211,10 @@
 
 .lots__look-more-link {
   display: block;
-  padding: 30px 0 0 40px;
+  margin: 30px 0 0 40px;
   font-weight: 400;
   font-size: 20px;
+  width: fit-content;
 }
 
 .about {
@@ -252,7 +252,6 @@
   color: black;
   font-weight: 700;
   font-size: 40px;
-  font-style: bold;
   text-transform: uppercase;
 }
 
@@ -273,16 +272,16 @@
   padding: 180px 50px 0 50px;
 }
 
-.footer__address {
-  display: flex;
-  justify-self: start;
-}
-
 .footer__menu-list {
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   list-style: none;
+  padding: 0 0 82px 0;
+}
+
+.footer__menu-link-active {
+  text-decoration: none;
 }
 
 .footer__social-list {
